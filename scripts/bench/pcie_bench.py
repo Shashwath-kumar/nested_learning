@@ -9,9 +9,6 @@ Runs across transfer sizes from 1 MB to 1 GB (configurable). Records
 median bandwidth across N repetitions per size. Outputs:
   - reports/bench/pcie_bench.csv
   - reports/bench/pcie_bench.json (summary stats)
-
-This is the empirical go/no-go for Idea 6 (per-chunk pipelined staging):
-sustained < 15 GB/s on this host kills that idea regardless of cleverness.
 """
 
 from __future__ import annotations
